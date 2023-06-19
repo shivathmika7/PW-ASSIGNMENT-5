@@ -1,0 +1,118 @@
+                                                                                                                                                                                  ASSIGNMENT-5
+
+1.   In HTML, elements can be categorized as either inline or block elements.
+
+Inline elements are those that only take up as much width as necessary, and do not create a new line after the element. Inline elements can be nested within other inline elements, or within block elements. Examples of inline elements include "a", "span", "img", "input", and "button".
+
+Block elements are those that take up the full width available, and create a new line after the element. Block elements cannot be nested within inline elements, but they can be nested within other block elements. Examples of block elements include "div", "p", "h1", "ul", and "li".
+
+The main difference between inline and block elements is how they affect the layout of the page. Block elements take up the full width available, and create a new line after the element, so they are often used to create containers for other elements. Inline elements only take up as much width as necessary, and do not create a new line after the element, so they are often used for smaller elements that do not need to be contained within a larger container.
+
+Here are some examples of inline and block elements:
+
+Inline elements:
+- a
+- span
+- img
+- input
+- button
+
+Block elements:
+- div
+- p
+- h1, h2, h3, etc.
+- ul, ol
+- li
+- header, footer, nav, article, section, aside (HTML5 semantic elements)
+
+2.   Working with images in HTML is a common task, and it's done using the `<img>` tag. The `<img>` tag is a self-closing tag, which means that it doesn't need a closing tag. Instead, it uses attributes to specify the source of the image, its size, and other properties.
+
+Here's an example of how to use the `<img>` tag to display an image:
+
+html
+<img src="image.jpg" alt="A beautiful sunset">
+
+
+In this example, the `src` attribute specifies the source of the image, which is a file named "image.jpg" in the same directory as the HTML file. The `alt` attribute specifies alternative text that should be displayed if the image cannot be loaded, or if the user is using a screen reader. The `alt` attribute is important for accessibility, and it should describe the content of the image in a concise way.
+
+Here are some other important attributes that can be used with the `<img>` tag:
+
+- `width` and `height`: These attributes specify the width and height of the image in pixels. It's important to specify these attributes to avoid layout issues when the page loads, especially if the image takes a long time to load.
+
+- `title`: This attribute specifies a tooltip that should be displayed when the user hovers over the image.
+
+- `loading`: This attribute specifies how the browser should load the image. The default value is "auto", which means that the browser will decide when to load the image based on the user's connection speed. Other values include "eager", which means that the image should be loaded as soon as possible, and "lazy", which means that the image should be loaded only when it's in the viewport.
+
+- `srcset`: This attribute specifies a list of image sources that the browser can choose from based on the user's device and screen size. This is useful for responsive design, where different images are displayed on different devices.
+
+- `sizes`: This attribute specifies the sizes of the image in different viewports. It's used in conjunction with the `srcset` attribute to tell the browser which image to choose based on the viewport size.
+
+- `decoding`: This attribute specifies how the browser should decode the image data. The default value is "async", which means that the image should be decoded asynchronously. Other values include "sync", which means that the image should be decoded synchronously, and "auto", which means that the browser should decide based on the user's connection speed
+
+3.   In HTML, there are two types of lists: ordered lists and unordered lists.
+
+To create an unordered list, you can use the `<ul>` tag, and then use the `<li>` tag to create each list item. Here's an example:
+
+html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+
+This will create an unordered list with three items, each displayed with a bullet point.
+
+To create an ordered list, you can use the `<ol>` tag, and then use the `<li>` tag to create each list item. Here's an example:
+
+html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+This will create an ordered list with three items, each displayed with a number.
+
+In both cases, you can also nest lists inside other lists by adding another `<ul>` or `<ol>` tag inside an `<li>` tag. Here's an example:
+
+html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2
+    <ul>
+      <li>Subitem 1</li>
+      <li>Subitem 2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+This will create an unordered list with three items, where the second item has a nested unordered list with two subitems.
+
+
+4.   To interlink web pages and navigate people to other websites, you can follow these steps:
+
+1. Use Hyperlinks: Hyperlinks, also known as anchor tags, are the most common way to interlink web pages. You can create a hyperlink by adding the HTML `<a>` tag with the destination URL within the `href` attribute. For example:
+   html
+   <a href="https://example.com">Link Text</a>
+   
+2. Internal Linking: If you want to link to other pages within your website, you can use relative URLs. Relative URLs specify the path to the page relative to the current page. For example, if you have a page named "about.html" in the same directory as the current page, you can link to it using:
+   html
+   <a href="about.html">About</a>
+   
+3. External Linking: To navigate people to other websites, you can use absolute URLs. Absolute URLs provide the full web address of the target website. For example:
+   html
+   <a href="https://example.com">External Link</a>
+   
+4. Targeting New Windows or Tabs: If you want the linked page to open in a new window or tab, you can use the `target` attribute with the value `_blank`. This way, when users click the link, it will open the destination in a new tab or window, keeping your website open.
+   html
+   <a href="https://example.com" target="_blank">Link Text</a>
+   
+5. Consistent Navigation: Ensure that your navigation menus or site headers are present on all pages, making it easy for users to navigate between pages. You can include links to important pages or sections within your website in these navigation elements.
+
+6. Descriptive Link Text: Use descriptive and relevant anchor text for your links. The text should provide users with an idea of what they will find when they click on the link. Avoid using generic text like "click here" or "read more."
+
+7. Sitemaps: Consider creating an XML sitemap for your website. A sitemap is a file that lists all the pages on your website, including their relationships and importance. Search engines can use sitemaps to discover and index your web pages, which can improve visibility and search engine rankings.
+
+Remember to always test your links to ensure they work correctly and lead to the intended destinations.
